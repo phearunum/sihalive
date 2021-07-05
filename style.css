@@ -1,4 +1,29 @@
-    
+    @media print {
+    .this-break-page {
+        page-break-after: always;
+    }
+    table { page-break-after:auto }
+    tr    { page-break-inside:avoid; page-break-after:auto }
+    thead { display:table-header-group }
+    tfoot { display:table-footer-group }
+    footer{bottom: 0;position:fixed;}
+}
+@print {
+    @page :footer {
+        display: none
+    }@page :header {
+        display: none
+    }
+    .this-break-page {
+    page-break-after: always;
+    }
+}
+@page{
+    size:portrait;
+}
+.page-break{
+    page-break-after: always;
+}
       
         body {
         width: 210mm!important;
