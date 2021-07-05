@@ -1,144 +1,142 @@
-@media print {
-    .this-break-page {
-        page-break-after: always;
-    }
-    table { page-break-after:auto }
-    tr    { page-break-inside:avoid; page-break-after:auto }
-    td    { page-break-inside:avoid; page-break-after:auto;margin-bottom: 20px; }
-    thead { display:table-header-group }
-    tfoot { display:table-footer-group }
-    footer{bottom: 0;position:fixed;}
-}
-@print {
-    @page :footer {
-        display: none
-    }@page :header {
-        display: none
-    }
-    .this-break-page {
-    page-break-after: always;
-    }
-}
-@page{
-    size:portrait;
-}
-.page-break{
-    page-break-after: always;
-}
-body {
-width: 210mm!important;
-margin: 0 auto; 
-color: #001028;
-background: #fff; 
-font-size: 12px; 
-font-family:Tahoma;
+     @media print {
+            .this-break-page {
+                page-break-after: always;
+            }
+            table { page-break-after:auto }
+            tr    { page-break-inside:avoid; page-break-after:auto }
+            td    { page-break-inside:avoid; page-break-after:auto;margin-bottom: 20px; }
+            thead { display:table-header-group }
+            tfoot { display:table-footer-group }
+            footer{bottom: 0;position:fixed;}
+        }
+        @print {
+            @page :footer {
+                display: none
+            }@page :header {
+                display: none
+            }
+            .this-break-page {
+            page-break-after: always;
+            }
+        }
+        @page{
+            size:portrait;
+        }
+        .page-break{
+            page-break-after: always;
+        }
+        body {
+        width: 210mm!important;
+        margin: 0 auto; 
+        color: #001028;
+        background: #fff; 
+        font-size: 12px; 
+        font-family:Tahoma;
+        
+        }
+            .page-setup{
+            padding:5px
+            }
+        header {
+            padding: 10px 0;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        .this-container{
+            
+            width: 100%;
+            padding: 4px;
+            background-color:white;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        .this-container-signature{
+            display:inline-block;
+            width: 100%;
+            padding: 4px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        .this-titel{
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .this-titel-content{
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem; 
+        }
+        .this-margin{margin:6px!important}
+        .this-margin-top{margin-top:6px!important}
+        .this-margin-bottom{margin-bottom:6px!important}
+        .this-text-content{
+            font-size: 10pt;
+            font-weight: 400;
+        }
+        .this-signature-left{
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            width: 40%;
+            float: left;
+        }
+        .this-signature-right{
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            width: 40%;
+            float: right;
+        }
+        .this-footer-printer-infor {
+            border: 1pt none Black;
+            background-color: #deddcf;
+            display: flex;
+            ;font-size: 8pt;color:#666666;
+            padding:3px;
+            font-weight: 600;
+        }
+        .this-footer-printer-infor > div{
+          padding: 2px;
+        } 
+        .this-table{
 
-}
-    .page-setup{
-    padding:5px
-    }
-header {
-    padding: 10px 0;
-    margin-bottom: 30px;
-    margin-top: 10px;
-}
-.this-container{
-    
-    width: 100%;
-    padding: 4px;
-    background-color:white;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-}
-.this-container-signature{
-    display:inline-block;
-    width: 100%;
-    padding: 4px;
-    background-color: white;
-    margin-bottom: 20px;
-}
-.this-titel{
-    text-align: center;
-    font-weight: 600;
-    font-size: 1rem;
-}
-.this-titel-content{
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.85rem; 
-}
-.this-margin{margin:6px!important}
-.this-margin-top{margin-top:6px!important}
-.this-margin-bottom{margin-bottom:6px!important}
-.this-text-content{
-    font-size: 10pt;
-    font-weight: 400;
-}
-.this-signature-left{
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.85rem;
-    width: 40%;
-    float: left;
-}
-.this-signature-right{
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.85rem;
-    width: 40%;
-    float: right;
-}
-.this-footer-printer-infor {
-    border: 1pt none Black;
-    background-color: #deddcf;
-    display: flex;
-    ;font-size: 8pt;color:#666666;
-    padding:3px;
-    font-weight: 600;
-}
-.this-footer-printer-infor > div{
-  padding: 2px;
-} 
-.this-table{
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-table {
-width: 100%;
-border-collapse: collapse;
-border-spacing: 0;
-margin-bottom: 20px;
-}
-table td {
-border: 1pt solid Silver;
-font-size: 0.8rem;
-background-color: rgb(255, 255, 255);
-text-align: center;
-width: 30%;
-vertical-align: middle!important;
-}
-table th {
-border:1px solid #2e456e;
-font-size: 7.5pt;
-color:white;
-white-space:pre-line!important; 
-text-align: center;
-background-color: #2e456e;
-padding: 5px;
-vertical-align: middle!important;
-
-}
-.this-text-left{
-text-align: left!important;
-}
-.this-hide-col{
-    border: 1px solid white;
-}
-.this-hide-border-left{
-    border-left: 1px solid white;
-}
-.this-hide-border-top-left{
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-}
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 20px;
+        }
+        table td {
+        border: 1pt solid Silver;
+        font-size: 0.8rem;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 30%;
+        }
+        table th {
+        border:1px solid #2e456e;
+        font-size: 7.5pt;
+        color:white;
+        white-space:pre-line!important; 
+        text-align: center;
+        background-color: #2e456e;
+        padding: 0px;
+        vertical-align: top;
+        }
+        .this-text-left{
+        text-align: left!important;
+        }
+        .this-hide-col{
+            border: 1px solid white;
+        }
+        .this-hide-border-left{
+            border-left: 1px solid white;
+        }
+        .this-hide-border-top-left{
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+        }
