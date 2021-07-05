@@ -104,7 +104,31 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+table {
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+margin-bottom: 20px;
+}
+table td {
+border: 1pt solid Silver;
+font-size: 0.8rem;
+background-color: rgb(255, 255, 255);
+text-align: center;
+width: 30%;
+vertical-align: middle!important;
+}
+table th {
+border:1px solid #2e456e;
+font-size: 7.5pt;
+color:white;
+white-space:pre-line!important; 
+text-align: center;
+background-color: #2e456e;
+padding: 5px;
+vertical-align: middle!important;
 
+}
 .this-text-left{
 text-align: left!important;
 }
