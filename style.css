@@ -89,12 +89,12 @@
         }
 table {
   border-collapse: collapse;
-    width: 100%;
+    width: 100%!important;
 }
 
 td {
   border: 1px gray solid;
   padding: 4px;
   width: 5em;
-      width: 30%;
+      width: 30%!important;
 }
